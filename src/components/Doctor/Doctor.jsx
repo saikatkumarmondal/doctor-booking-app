@@ -1,60 +1,70 @@
 import React from 'react';
 import { Link, useNavigate,  } from 'react-router';
 
-const Doctor = ({doctor}) => {
-    const {
-      image,
-      name,
-      education,
-      daysAvailable,
-      experience,
-        registrationNumber,
-      id
-    } = doctor;
-    const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
-    const available = daysAvailable.includes( today );
-    const navigate = useNavigate();
-    // const doctors = useLoaderData(); 
-    // const { id } = useParams(); 
-    // const doctorId = parseInt( id );
-    const handleNavigate = ( id ) => {
-        navigate(`/doctorDetails/${id}`);
-    }
-    return (
-      <div className="card bg-base-100 w-96 shadow-sm">
-        <figure className="px-10 pt-10 rounded-4xl bg-green-300 w-2/4 mx-auto m-4">
-          <img src={image} alt="Shoes" className="rounded-xl pb-10 w-[500px]" />
-        </figure>
-        <div>
-          {available ? (
-            <button className="btn btn-soft btn-success ml-6 mr-5 px-9 rounded-4xl">
-              Available
-            </button>
-          ) : (
-            <button className="btn btn-soft btn-danger ml-6 mr-5 px-9 rounded-4xl">
-              Not Available
-            </button>
-          )}
-          <button className="btn btn-outline btn-primary ml-6 mr-5 px-9 rounded-4xl">
-            {experience}
+const Doctor = ({ doctor }) => {
+  const navigate = useNavigate();
+  const {
+    image,
+    name,
+    education,
+    daysAvailable,
+    experience,
+    registrationNumber,
+    id,
+  } = doctor;
+  const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
+  const available = daysAvailable.includes(today);
+
+  // const doctors = useLoaderData();
+  // const { id } = useParams();
+  // const doctorId = parseInt( id );
+
+  const handleNavigate = (doctorId) => {
+    const path = `/doctorDetails/${doctorId}`;
+    console.log(`Doctor Component: Attempting to navigate to: ${path}`);
+    navigate(path);
+  };
+  return (
+    <div className="card bg-white w-full max-w-sm rounded-xl shadow-lg m-4 p-4 flex flex-col items-center">
+      <figure className="px-6 pt-6 bg-green-100 rounded-2xl w-32 h-32 mx-auto mb-4 flex justify-center items-center overflow-hidden">
+        <img
+          src={image}
+          alt={name}
+          className="rounded-full w-full h-full object-cover"
+        />
+      </figure>
+      <div className="flex justify-center items-center w-full mb-4">
+        {available ? (
+          <span className="bg-green-500 text-white text-xs px-4 py-2 rounded-full mr-2 shadow-md">
+            Available Today
+          </span>
+        ) : (
+          <span className="bg-red-400 text-white text-xs px-4 py-2 rounded-full mr-2 shadow-md">
+            Not Available Today
+          </span>
+        )}
+        <span className="bg-blue-100 text-blue-700 text-xs px-4 py-2 rounded-full shadow-md">
+          {experience}
+        </span>
+      </div>
+      <div className="card-body items-center text-center p-0">
+        <h2 className="card-title text-xl font-semibold text-gray-800 mb-1">
+          {name}
+        </h2>
+        <p className="text-gray-600 text-sm mb-1">{education}</p>
+        <p className="text-gray-500 text-xs">{registrationNumber}</p>
+        <div className="w-full h-px bg-gray-200 my-4"></div>
+        <div className="card-actions">
+          {/* Using Link from react-router-dom for navigation */}
+          <button
+            onClick={() => handleNavigate(id)}
+            className="btn bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-200 ease-in-out shadow-lg">
+            View Details
           </button>
         </div>
-        <div className="card-body items-center text-center">
-          <h2 className="card-title">{name}</h2>
-          <p>{education}</p>
-          <p>{registrationNumber}</p>
-          <div className="w-full h-1 border-t-2 border-dashed border-gray-300 my-4"></div>
-          <div className="card-actions">
-            <button
-              onClick={()=>handleNavigate(id)}
-              className="btn btn-primary bg-white text-blue-400 rounded-4xl px-10 py-4"
-              >
-              View Details
-            </button>
-          </div>
-        </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default Doctor;
