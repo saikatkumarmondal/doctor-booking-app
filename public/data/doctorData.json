@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "image": "https://randomuser.me/api/portraits/men/30.jpg",
+    "name": "Dr. Subrata Sarker",
+    "education": "MBBS, FCPS (Medicine)",
+    "speciality": "Internal Medicine",
+    "experience": "15 years",
+    "registrationNumber": "BMDC-201122",
+    "daysAvailable": [],
+    "price": 700
+  },
+  {
+    "id": 2,
+    "image": "https://randomuser.me/api/portraits/women/44.jpg",
+    "name": "Dr. Ananya Das",
+    "education": "MBBS, MS (Gynae & Obs)",
+    "speciality": "Gynecology",
+    "experience": "12 years",
+    "registrationNumber": "BMDC-200891",
+    "daysAvailable": ["Monday", "Wednesday", "Saturday"],
+    "price": 800
+  },
+  {
+    "id": 3,
+    "image": "https://randomuser.me/api/portraits/men/47.jpg",
+    "name": "Dr. Bikash Ranjan Roy",
+    "education": "MBBS, MD (Cardiology)",
+    "speciality": "Cardiology",
+    "experience": "17 years",
+    "registrationNumber": "BMDC-199942",
+    "daysAvailable": ["Sunday", "Tuesday", "Friday"],
+    "price": 1000
+  },
+  {
+    "id": 4,
+    "image": "https://randomuser.me/api/portraits/women/55.jpg",
+    "name": "Dr. Kaberi Saha",
+    "education": "MBBS, DCH, MD (Pediatrics)",
+    "speciality": "Pediatrics",
+    "experience": "10 years",
+    "registrationNumber": "BMDC-201078",
+    "daysAvailable": ["Monday", "Thursday", "Saturday"],
+    "price": 600
+  },
+  {
+    "id": 5,
+    "image": "https://randomuser.me/api/portraits/men/52.jpg",
+    "name": "Dr. Arindam Paul",
+    "education": "MBBS, MS (Orthopedics)",
+    "speciality": "Orthopedics",
+    "experience": "14 years",
+    "registrationNumber": "BMDC-200505",
+    "daysAvailable": ["Sunday", "Wednesday", "Friday"],
+    "price": 900
+  },
+  {
+    "id": 6,
+    "image": "https://randomuser.me/api/portraits/women/51.jpg",
+    "name": "Dr. Madhuri Biswas",
+    "education": "MBBS, FCPS (Dermatology)",
+    "speciality": "Dermatology",
+    "experience": "11 years",
+    "registrationNumber": "BMDC-201164",
+    "daysAvailable": ["Tuesday", "Thursday", "Saturday"],
+    "price": 750
+  },
+  {
+    "id": 7,
+    "image": "https://randomuser.me/api/portraits/men/41.jpg",
+    "name": "Dr. Partha Pratim Dey",
+    "education": "MBBS, MPhil (Radiology)",
+    "speciality": "Radiology",
+    "experience": "9 years",
+    "registrationNumber": "BMDC-201243",
+    "daysAvailable": ["Monday", "Wednesday", "Friday"],
+    "price": 850
+  },
+  {
+    "id": 8,
+    "image": "https://randomuser.me/api/portraits/women/39.jpg",
+    "name": "Dr. Bristi Chakraborty",
+    "education": "MBBS, FCPS (ENT)",
+    "speciality": "ENT (Otolaryngology)",
+    "experience": "7 years",
+    "registrationNumber": "BMDC-201530",
+    "daysAvailable": ["Sunday", "Tuesday", "Thursday"],
+    "price": 700
+  },
+  {
+    "id": 9,
+    "image": "https://randomuser.me/api/portraits/men/40.jpg",
+    "name": "Dr. Sujoy Barman",
+    "education": "MBBS, MS (Urology)",
+    "speciality": "Urology",
+    "experience": "13 years",
+    "registrationNumber": "BMDC-200709",
+    "daysAvailable": ["Monday", "Wednesday", "Saturday"],
+    "price": 950
+  },
+  {
+    "id": 10,
+    "image": "https://randomuser.me/api/portraits/women/60.jpg",
+    "name": "Dr. Ruma Nandi",
+    "education": "MBBS, MD (Neurology)",
+    "speciality": "Neurology",
+    "experience": "8 years",
+    "registrationNumber": "BMDC-201600",
+    "daysAvailable": ["Tuesday", "Thursday", "Friday"],
+    "price": 1000
+  },
+  {
+    "id": 11,
+    "image": "https://randomuser.me/api/portraits/men/60.jpg",
+    "name": "Dr. Soumya Ghosh",
+    "education": "MBBS, MD (Oncology)",
+    "speciality": "Cancer Specialist",
+    "experience": "10 years",
+    "registrationNumber": "BMDC-201455",
+    "daysAvailable": ["Sunday", "Wednesday", "Friday"],
+    "price": 1100
+  },
+  {
+    "id": 12,
+    "image": "https://randomuser.me/api/portraits/women/57.jpg",
+    "name": "Dr. Tapati Roy",
+    "education": "MBBS, FCPS (Psychiatry)",
+    "speciality": "Psychiatry",
+    "experience": "9 years",
+    "registrationNumber": "BMDC-201380",
+    "daysAvailable": ["Monday", "Thursday", "Saturday"],
+    "price": 800
+  }
+]
