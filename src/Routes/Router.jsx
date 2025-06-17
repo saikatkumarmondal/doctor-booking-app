@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
         Component: Home,
       },
       {
-        path: "my-bookings",
+        path: "my-bookings/:id",
         Component: MyBookings,
       },
       {
@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
         Component: Contactus,
       },
       {
-        path: "/doctorDetails/:doctorId",
+        path: "doctorDetails/:id",
         loader: () => fetch("/data/doctorData.json"),
         Component: DoctorDetails,
       },

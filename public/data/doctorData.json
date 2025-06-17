@@ -8,7 +8,8 @@
     "experience": "15 years",
     "registrationNumber": "BMDC-201122",
     "daysAvailable": [],
-    "price": 700
+    "price": 700,
+    "worksAt": "Green Life Hospital, Dhaka"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "experience": "12 years",
     "registrationNumber": "BMDC-200891",
     "daysAvailable": ["Monday", "Wednesday", "Saturday"],
-    "price": 800
+    "price": 800,
+    "worksAt": "Ibrahim Cardiac Hospital"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "experience": "17 years",
     "registrationNumber": "BMDC-199942",
     "daysAvailable": ["Sunday", "Tuesday", "Friday"],
-    "price": 1000
+    "price": 1000,
+    "worksAt": "Labaid Cardiac Hospital"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "experience": "10 years",
     "registrationNumber": "BMDC-201078",
     "daysAvailable": ["Monday", "Thursday", "Saturday"],
-    "price": 600
+    "price": 600,
+    "worksAt": "Square Hospitals Ltd."
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "experience": "14 years",
     "registrationNumber": "BMDC-200505",
     "daysAvailable": ["Sunday", "Wednesday", "Friday"],
-    "price": 900
+    "price": 900,
+    "worksAt": "United Hospital"
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "experience": "11 years",
     "registrationNumber": "BMDC-201164",
     "daysAvailable": ["Tuesday", "Thursday", "Saturday"],
-    "price": 750
+    "price": 750,
+    "worksAt": "Apollo Hospital Dhaka"
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "experience": "9 years",
     "registrationNumber": "BMDC-201243",
     "daysAvailable": ["Monday", "Wednesday", "Friday"],
-    "price": 850
+    "price": 850,
+    "worksAt": "Popular Diagnostic Centre"
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "experience": "7 years",
     "registrationNumber": "BMDC-201530",
     "daysAvailable": ["Sunday", "Tuesday", "Thursday"],
-    "price": 700
+    "price": 700,
+    "worksAt": "Delta Medical College Hospital"
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "experience": "13 years",
     "registrationNumber": "BMDC-200709",
     "daysAvailable": ["Monday", "Wednesday", "Saturday"],
-    "price": 950
+    "price": 950,
+    "worksAt": "Medinova Medical Services"
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "experience": "8 years",
     "registrationNumber": "BMDC-201600",
     "daysAvailable": ["Tuesday", "Thursday", "Friday"],
-    "price": 1000
+    "price": 1000,
+    "worksAt": "National Institute of Neurosciences"
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "experience": "10 years",
     "registrationNumber": "BMDC-201455",
     "daysAvailable": ["Sunday", "Wednesday", "Friday"],
-    "price": 1100
+    "price": 1100,
+    "worksAt": "Ahsania Mission Cancer Hospital"
   },
   {
     "id": 12,
@@ -129,6 +140,7 @@
     "experience": "9 years",
     "registrationNumber": "BMDC-201380",
     "daysAvailable": ["Monday", "Thursday", "Saturday"],
-    "price": 800
+    "price": 800,
+    "worksAt": "Mental Health Centre Dhaka"
   }
 ]

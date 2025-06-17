@@ -14,7 +14,7 @@ const BestDoctors = () => {
   const doctorsToShow = showAll ? doctors : doctors.slice(0, 6);
 
   return (
-    <div>
+    <div className="mr-9">
       <h1 className="text-4xl text-black font-extrabold plus-jakarta-sans-font text-center m-6">
         Our Best Doctors
       </h1>
@@ -31,7 +31,9 @@ const BestDoctors = () => {
       </div>
       {!showAll && doctors.length > 6 && (
         <div className="text-center mt-6">
-          <button className="btn btn-primary rounded-4xl" onClick={() => setShowAll(true)}>
+          <button
+            className="btn btn-primary rounded-4xl"
+            onClick={() => setShowAll(true)}>
             Show All Doctors
           </button>
         </div>

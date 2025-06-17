@@ -19,11 +19,7 @@ const Doctor = ({ doctor }) => {
   // const { id } = useParams();
   // const doctorId = parseInt( id );
 
-  const handleNavigate = (doctorId) => {
-    const path = `/doctorDetails/${doctorId}`;
-    console.log(`Doctor Component: Attempting to navigate to: ${path}`);
-    navigate(path);
-  };
+  
   return (
     <div className="card bg-white w-full max-w-sm rounded-xl shadow-lg m-4 p-4 flex flex-col items-center">
       <figure className="px-6 pt-6 bg-green-100 rounded-2xl w-32 h-32 mx-auto mb-4 flex justify-center items-center overflow-hidden">
@@ -56,11 +52,11 @@ const Doctor = ({ doctor }) => {
         <div className="w-full h-px bg-gray-200 my-4"></div>
         <div className="card-actions">
           {/* Using Link from react-router-dom for navigation */}
-          <button
-            onClick={() => handleNavigate(id)}
+          <Link
+            to={`/doctorDetails/${id}`}
             className="btn bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-200 ease-in-out shadow-lg">
             View Details
-          </button>
+          </Link>
         </div>
       </div>
     </div>
