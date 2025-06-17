@@ -5,6 +5,7 @@ import {
   addToStoredDB,
   getAllBookings,
 } from "../../components/utility/addToDB";
+import { Helmet } from "react-helmet-async";
 const DoctorDetails = () => {
   const navigate = useNavigate();
   const data = useLoaderData();
@@ -47,6 +48,9 @@ const DoctorDetails = () => {
   };
   return (
     <div className="p-10 ">
+      <Helmet>
+        <title>Doctor Details | Doctor Booking App</title>
+      </Helmet>
       <div className="text-center bg-white w-[980px] h-[256px] ml-10 my-10 shadow-inner rounded-4xl">
         <h1 className="plus-jakarta-sans-font font-extrabold text-3xl text-[#141414] py-10">
           Doctor’s Profile Details

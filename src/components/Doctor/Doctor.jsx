@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link, useNavigate,  } from 'react-router';
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router";
 
 const Doctor = ({ doctor }) => {
-  const navigate = useNavigate();
   const {
     image,
     name,
@@ -19,9 +19,11 @@ const Doctor = ({ doctor }) => {
   // const { id } = useParams();
   // const doctorId = parseInt( id );
 
-  
   return (
     <div className="card bg-white w-full max-w-sm rounded-xl shadow-lg m-4 p-4 flex flex-col items-center">
+      <Helmet>
+        <title>Doctor | {name} </title>
+      </Helmet>
       <figure className="px-6 pt-6 bg-green-100 rounded-2xl w-32 h-32 mx-auto mb-4 flex justify-center items-center overflow-hidden">
         <img
           src={image}

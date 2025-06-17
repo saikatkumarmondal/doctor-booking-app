@@ -13,6 +13,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import { Helmet } from "react-helmet-async";
 
 const MyBookings = () => {
   const [doctors, setDoctors] = useState([]);
@@ -42,11 +43,14 @@ const MyBookings = () => {
 
   return (
     <div>
+      <Helmet>
+        <title> My Bookings</title>
+      </Helmet>
       <h1>MyBookings</h1>
       <ResponsiveContainer width="100%" height={350}>
         <AreaChart
           data={bookings.map((doc) => ({
-            name: doc.name.split(" ")[1], // use 2nd word of name
+            name: doc.name.split(" ")[1],
             price: doc.price,
           }))}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>

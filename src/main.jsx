@@ -5,10 +5,13 @@ import { ToastContainer } from "react-toastify";
 import "./index.css";
 
 import { router } from "./Routes/Router.jsx";
+import { HelmetProvider } from "react-helmet-async";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
-    <ToastContainer />
+    <HelmetProvider>
+      <RouterProvider router={router}></RouterProvider>
+      <ToastContainer />
+    </HelmetProvider>
   </StrictMode>
 );

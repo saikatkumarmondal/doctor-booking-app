@@ -1,9 +1,13 @@
 import React from 'react';
+import { Helmet } from "react-helmet-async";
 
 const Contactus = () => {
   return (
     <div>
-      <h1>Contactus</h1>
+      <Helmet>
+        <title>Contact us | Doctor Booking App</title>
+      </Helmet>
+      <h1>Contac tus</h1>
     </div>
   );
 };
